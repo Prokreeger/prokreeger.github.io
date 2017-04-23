@@ -62,28 +62,28 @@ body {
 .user-why-frontend__subtitle,
 .user-contact-information__subtitle,
 .user-feedback__subtitle {
-	font-family: "MyriadProRegular";
+	font-family: "MyriadProRegular", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 21px;
 }
 .user-why-frontend__list {
 	color: #3b3b3b;
-	font-family: "MyriadProRegular";
+	font-family: "MyriadProRegular", Arial, sans-serif;
 	font-size: 14px;
 	margin-left: 35px;
 }
 .user-contact-information__phone,
 .user-feedback__text {
 	color: #3a3a3a;
-	font-family: "MyriadProRegular";
+	font-family: "MyriadProRegular", Arial, sans-serif;
 	font-size: 14px;
 	margin-bottom: 10px;
 	margin-left: 40px;
 }
 .user-contact-information__social {
 	color: #0056d3;
-	font-family: "MyriadProRegular";
+	font-family: "MyriadProRegular", Arial, sans-serif;
 	font-size: 14px;
 	font-style: italic;
 	margin-left: 40px;
