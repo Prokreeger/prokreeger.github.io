@@ -56,6 +56,9 @@ header {
     margin-right: 33px;
     text-align: center;
 }
+.country-list__link {
+    color: #128aa7;
+}
 .country-list__item {
     float: left;
     width: 58px;
@@ -64,7 +67,6 @@ header {
     margin-right: 0;
 }
 .country-list__text {
-    color: #128aa7;
     display: block;
     font-size: 10px;
 }
