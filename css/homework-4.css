@@ -4,12 +4,12 @@ body {
 }
 p {
     font-size: 14px;
-    margin-bottom: 14px;
+    line-height: 28px;
 }
 .sidebar-heading {
     color: #424c43;
     font-size: 18px;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
     text-align: center;
 }
 .clearfix:after {
