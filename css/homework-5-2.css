@@ -1,0 +1,88 @@
+body {
+    background-color: #ccc;
+}
+.table-picture {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 50px auto 0;
+}
+.table-picture td {
+    border: 10px solid #000000;
+}
+.table-picture--yellow {
+    background-color: #f8ff00;
+}
+.table-picture--black {
+    background-color: #000000;
+}
+.table-picture--blue {
+    background-color: #3531ff;
+}
+.table-picture--white {
+    background-color: #ffffff;
+}
+.table-picture--red {
+    background-color: #ff0000;
+}
+.table-picture .table-picture__first-cell {
+    border-left: 0;
+    border-top: 0;
+    height: 47px;
+}
+.table-picture .table-picture__second-cell {
+    border-top: 0;
+}
+.table-picture .table-picture__third-cell {
+    border-right: 0;
+    border-top: 0;
+}
+.table-picture .table-picture__fourth-cell {
+    border-left: 0;
+    height: 130px;
+    width: 48px;
+}
+.table-picture .table-picture__sixth-cell {
+    border-right: 0;
+}
+.table-picture .table-picture__seventh-cell {
+    border-left: 0;
+}
+.table-picture .table-picture__eighth-cell {
+    width: 77px;
+}
+.table-picture .table-picture__ninth-cell {
+    border-right: 0;
+    height: 129px;
+    width: 75px;
+}
+.table-picture .table-picture__tenth-cell {
+    width: 128px;
+}
+.table-picture .table-picture__eleventh-cell {
+    width: 132px;
+}
+.table-picture .table-picture__twelfth-cell {
+    border-right: 0;
+    height: 62px;
+}
+.table-picture .table-picture__thirteenth-cell {
+    border-bottom: 0;
+    border-left: 0;
+}
+.table-picture .table-picture__fourteenth-cell {
+    height: 57px;
+}
+.table-picture .table-picture__fifteenth-cell {
+    border-right: 0;
+}
+.table-picture .table-picture__sixteenth-cell {
+    border-bottom: 0;
+}
+.table-picture .table-picture__seventeenth-cell {
+    height: 24px;
+}
+.table-picture .table-picture__eighteenth-cell {
+    border-bottom: 0;
+    border-right: 0;
+    height: 31px;
+}
