@@ -1,11 +1,20 @@
 /* CSS Document */
+
 * {
     margin: 0;
     padding: 0;
 }
+body {
+    margin-top: 25px;
+}
+.title {
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+}
 .home-page__menu {
     list-style: none;
-    margin: 100px auto 0;
+    margin: 0 auto 40px;
     width: 600px;
 }
 .home-page__menu-link {
