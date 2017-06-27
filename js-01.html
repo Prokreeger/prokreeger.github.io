@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS homework 1</title>
+</head>
+<body>
+  <p id="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ipsum earum vero autem, sit soluta nesciunt modi. Odit commodi incidunt eos iusto. Officiis vitae reiciendis aut quaerat delectus dicta quisquam!</p>
+  <p id="two"> Dolorem sit nulla tempore, placeat veniam voluptas totam! Suscipit consequatur corporis quibusdam fugiat sit? Eaque culpa doloremque architecto consectetur.</p>
+  <p id="three">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt repudiandae eligendi illo cum maiores perspiciatis harum sapiente ab ullam amet <span id="ttt">cumque</span>, saepe, corporis nobis dolore blanditiis quod molestias. Omnis, harum.</p>
+  <script type="text/javascript">
+    alert(document.getElementById('one').innerHTML); // 1
+    var two = document.getElementById('two');
+    two.innerHTML = 'Hello world! ' + two.innerHTML; // 2
+    document.getElementById('ttt').innerHTML = '55555555555'; // 3
+  </script>
+</body>
+</html>
