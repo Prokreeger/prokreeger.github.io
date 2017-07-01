@@ -16,10 +16,10 @@
                 <div class="authorization-box icon-sprite">
                     <input class="authorization-box__login-input" type="text" name="login" value="" placeholder="логин">
                     <input class="authorization-box__pass-input" type="password" name="pass" value="" placeholder="пароль">
-                    <a class="authorization-box__login" href="#">вход</a>
+                    <a class="authorization-box__login" href="#login">вход</a>
                     <span class="authorization-box__sep">|</span>
-                    <a class="authorization-box__register" href="#">регистрация</a>
-                    <a class="authorization-box__reset-pass" href="#">забыли пароль?</a>
+                    <a class="authorization-box__register" href="#register">регистрация</a>
+                    <a class="authorization-box__reset-pass" href="#reset-pass">забыли пароль?</a>
                 </div>
                 <div class="top-links">
                     <a href="#" class="top-links__home-icon icon-sprite"></a>
@@ -38,8 +38,10 @@
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Статьи</a></li>
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
                 </ul>
-                <div class="product-quantity">товаров: <span class="blue">0</span></div>
-                <div class="total-price">на сумму: <span class="blue">0,00 грн.</span></div>
+                <div class="cart">
+                    <div class="cart-quantity icon-sprite">товаров: <span class="cart-quantity__num cart-quantity__num--blue">0</span></div>
+                    <div class="cart-total">на сумму: <span class="cart-total__num cart-total__num--blue">0,00 грн.</span></div>
+                </div>
             </nav>
         </header>
         <div class="center-block clearfix">
@@ -73,34 +75,123 @@
                 </div>
             </div>
             <div class="content">
-
+                <div class="product">
+                    <div class="product__title">
+                        <a href="#" class="product__title-link">Goodyear</a>
+                    </div>
+                    <div class="product__model">Ultra Grip Extreme</div>
+                    <div class="product__image-box">
+                        <a href="#" class="product__link"><img src="img/h6/product.jpg" alt="Product foto" class="product__image"></a>
+                    </div>
+                    <div class="product__price">90,00 <span class="product__price-symbol">грн.</span></div>
+                </div>
+                <div class="product">
+                    <div class="product__title">
+                        <a href="#" class="product__title-link">Nokian</a>
+                    </div>
+                    <div class="product__model">Hakkapeliitta R</div>
+                    <div class="product__image-box">
+                        <a href="#" class="product__link"><img src="img/h6/product.jpg" alt="Product foto" class="product__image"></a>
+                    </div>
+                    <div class="product__price">115,00 <span class="product__price-symbol">грн.</span></div>
+                </div>
+                <div class="product">
+                    <div class="product__title">
+                        <a href="#" class="product__title-link">Hankook</a>
+                    </div>
+                    <div class="product__model">K 708 155/65 R14</div>
+                    <div class="product__image-box">
+                        <a href="#" class="product__link"><img src="img/h6/product.jpg" alt="Product foto" class="product__image"></a>
+                    </div>
+                    <div class="product__price">393,00 <span class="product__price-symbol">грн.</span></div>
+                </div>
+                <div class="product">
+                    <div class="product__title">
+                        <a href="#" class="product__title-link">Goodyear</a>
+                    </div>
+                    <div class="product__model">Ultra Grip Extreme</div>
+                    <div class="product__image-box">
+                        <a href="#" class="product__link"><img src="img/h6/product.jpg" alt="Product foto" class="product__image"></a>
+                    </div>
+                    <div class="product__price">90,00 <span class="product__price-symbol">грн.</span></div>
+                </div>
+                <div class="product">
+                    <div class="product__title">
+                        <a href="#" class="product__title-link">Nokian</a>
+                    </div>
+                    <div class="product__model">Hakkapeliitta R</div>
+                    <div class="product__image-box">
+                        <a href="#" class="product__link"><img src="img/h6/product.jpg" alt="Product foto" class="product__image"></a>
+                    </div>
+                    <div class="product__price">115,00 <span class="product__price-symbol">грн.</span></div>
+                </div>
+                <div class="product">
+                    <div class="product__title">
+                        <a href="#" class="product__title-link">Hankook</a>
+                    </div>
+                    <div class="product__model">K 708 155/65 R14</div>
+                    <div class="product__image-box">
+                        <a href="#" class="product__link"><img src="img/h6/product.jpg" alt="Product foto" class="product__image"></a>
+                    </div>
+                    <div class="product__price">393,00 <span class="product__price-symbol">грн.</span></div>
+                </div>
+                <div class="product">
+                    <div class="product__title">
+                        <a href="#" class="product__title-link">Goodyear</a>
+                    </div>
+                    <div class="product__model">Ultra Grip Extreme</div>
+                    <div class="product__image-box">
+                        <a href="#" class="product__link"><img src="img/h6/product.jpg" alt="Product foto" class="product__image"></a>
+                    </div>
+                    <div class="product__price">90,00 <span class="product__price-symbol">грн.</span></div>
+                </div>
+                <div class="product">
+                    <div class="product__title">
+                        <a href="#" class="product__title-link">Nokian</a>
+                    </div>
+                    <div class="product__model">Hakkapeliitta R</div>
+                    <div class="product__image-box">
+                        <a href="#" class="product__link"><img src="img/h6/product.jpg" alt="Product foto" class="product__image"></a>
+                    </div>
+                    <div class="product__price">115,00 <span class="product__price-symbol">грн.</span></div>
+                </div>
+                <div class="product">
+                    <div class="product__title">
+                        <a href="#" class="product__title-link">Hankook</a>
+                    </div>
+                    <div class="product__model">K 708 155/65 R14</div>
+                    <div class="product__image-box">
+                        <a href="#" class="product__link"><img src="img/h6/product.jpg" alt="Product foto" class="product__image"></a>
+                    </div>
+                    <div class="product__price">393,00 <span class="product__price-symbol">грн.</span></div>
+                </div>
             </div>
             <div class="right-sidebar">
                 <div class="filter-box">
                     <div class="filter-title icon-sprite">Бренды:</div>
                     <div class="filter-subtitle">Шины</div>
                     <ul class="filter-list">
-                        <li class="filter-list__item"><label class="filter-list__label" for="brand-1"><input type="checkbox" id="brand-1" name="brand-1" value=""> Бренд 1</label></li>
-                        <li class="filter-list__item"><label class="filter-list__label" for="brand-2"><input type="checkbox" id="brand-2" name="brand-2" value=""> Бренд 2</label></li>
-                        <li class="filter-list__item"><label class="filter-list__label" for="brand-3"><input type="checkbox" id="brand-3" name="brand-3" value=""> Бренд 3</label></li>
+                        <li class="filter-list__item"><label class="filter-list__label" for="brand-1"><input class="filter-checkbox" type="checkbox" id="brand-1" name="brand-1" value=""> Бренд 1</label></li>
+                        <li class="filter-list__item"><label class="filter-list__label" for="brand-2"><input class="filter-checkbox" type="checkbox" id="brand-2" name="brand-2" value=""> Бренд 2</label></li>
+                        <li class="filter-list__item"><label class="filter-list__label" for="brand-3"><input class="filter-checkbox" type="checkbox" id="brand-3" name="brand-3" value=""> Бренд 3</label></li>
                     </ul>
                     <div class="filter-subtitle">Диски</div>
                     <ul class="filter-list">
-                        <li class="filter-list__item"><label class="filter-list__label" for="brand-4"><input type="checkbox" id="brand-4" name="brand-4" value=""> Бренд 1</label></li>
-                        <li class="filter-list__item"><label class="filter-list__label" for="brand-5"><input type="checkbox" id="brand-5" name="brand-5" value=""> Бренд 2</label></li>
-                        <li class="filter-list__item"><label class="filter-list__label" for="brand-6"><input type="checkbox" id="brand-6" name="brand-6" value=""> Бренд 3</label></li>
+                        <li class="filter-list__item"><label class="filter-list__label" for="brand-4"><input class="filter-checkbox" type="checkbox" id="brand-4" name="brand-4" value=""> Бренд 1</label></li>
+                        <li class="filter-list__item"><label class="filter-list__label" for="brand-5"><input class="filter-checkbox" type="checkbox" id="brand-5" name="brand-5" value=""> Бренд 2</label></li>
+                        <li class="filter-list__item"><label class="filter-list__label" for="brand-6"><input class="filter-checkbox" type="checkbox" id="brand-6" name="brand-6" value=""> Бренд 3</label></li>
                     </ul>
                 </div>
             </div>
             <ul class="brand-wall">
-                <li class="brand-wall__item"><img src="" alt="" class="brand-wall__img"></li>
-                <li class="brand-wall__item"><img src="" alt="" class="brand-wall__img"></li>
-                <li class="brand-wall__item"><img src="" alt="" class="brand-wall__img"></li>
-                <li class="brand-wall__item"><img src="" alt="" class="brand-wall__img"></li>
-                <li class="brand-wall__item"><img src="" alt="" class="brand-wall__img"></li>
-                <li class="brand-wall__item"><img src="" alt="" class="brand-wall__img"></li>
-                <li class="brand-wall__item"><img src="" alt="" class="brand-wall__img"></li>
-                <li class="brand-wall__item"><img src="" alt="" class="brand-wall__img"></li>
+                <li class="brand-wall__item"><a href="#" class="brand-wall__link brand-wall__link--toyo"></a></li>
+                <li class="brand-wall__item"><a href="#" class="brand-wall__link brand-wall__link--bridgestone"></a></li>
+                <li class="brand-wall__item"><a href="#" class="brand-wall__link brand-wall__link--continental"></a></li>
+                <li class="brand-wall__item"><a href="#" class="brand-wall__link brand-wall__link--cooper"></a></li>
+                <li class="brand-wall__item"><a href="#" class="brand-wall__link brand-wall__link--avon"></a></li>
+                <li class="brand-wall__item"><a href="#" class="brand-wall__link brand-wall__link--tire-factory"></a></li>
+                <li class="brand-wall__item"><a href="#" class="brand-wall__link brand-wall__link--pirelli"></a></li>
+                <li class="brand-wall__item"><a href="#" class="brand-wall__link brand-wall__link--dunlop"></a></li>
             </ul>
         </div>
         <footer>
