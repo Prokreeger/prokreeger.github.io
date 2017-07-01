@@ -12,25 +12,34 @@
     <div class="container">
         <header>
             <div class="top-bar">
-                <div class="phone">(044)123-45-67 (044)567-89-10</div>
-                <div class="authorization-box"></div>
+                <div class="phone icon-sprite">(044)123-45-67 (044)567-89-10</div>
+                <div class="authorization-box icon-sprite">
+                    <input class="authorization-box__login-input" type="text" name="login" value="" placeholder="логин">
+                    <input class="authorization-box__pass-input" type="password" name="pass" value="" placeholder="пароль">
+                    <a class="authorization-box__login" href="#">вход</a>
+                    <span class="authorization-box__sep">|</span>
+                    <a class="authorization-box__register" href="#">регистрация</a>
+                    <a class="authorization-box__reset-pass" href="#">забыли пароль?</a>
+                </div>
                 <div class="top-links">
-                    <a href="#" class="top-links__home-icon"></a>
-                    <a href="#" class="top-links__sitemap-icon"></a>
-                    <a href="#" class="top-links__email-icon"></a>
+                    <a href="#" class="top-links__home-icon icon-sprite"></a>
+                    <a href="#" class="top-links__sitemap-icon icon-sprite"></a>
+                    <a href="#" class="top-links__email-icon icon-sprite"></a>
                 </div>
             </div>
             <div class="main-img">
                 <img src="img/h6/main-image.jpg" alt="Main image">
             </div>
-            <nav>
+            <nav class="nav-bar">
                 <ul class="main-menu">
-                    <li class="main-menu__item"><a href="#" class="main-menu__link">О компании</a></li>
+                    <li class="main-menu__item"><a href="#" class="main-menu__link">О компани</a></li>
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Оплата</a></li>
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Доставка</a></li>
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Статьи</a></li>
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
                 </ul>
+                <div class="product-quantity">товаров: <span class="blue">0</span></div>
+                <div class="total-price">на сумму: <span class="blue">0,00 грн.</span></div>
             </nav>
         </header>
         <div class="center-block clearfix">
@@ -39,7 +48,7 @@
             </div>
             <div class="left-sidebar">
                 <div class="catalog-box">
-                    <div class="catalog-title">Каталог продукции:</div>
+                    <div class="catalog-title icon-sprite">Каталог продукции:</div>
                     <div class="catalog-subtitle">Шины</div>
                     <ul class="catalog-list">
                         <li class="catalog-list__item"><a href="#" class="catalog-list__link">Наименование 1</a></li>
@@ -68,7 +77,7 @@
             </div>
             <div class="right-sidebar">
                 <div class="filter-box">
-                    <div class="filter-title">Бренды:</div>
+                    <div class="filter-title icon-sprite">Бренды:</div>
                     <div class="filter-subtitle">Шины</div>
                     <ul class="filter-list">
                         <li class="filter-list__item"><label class="filter-list__label" for="brand-1"><input type="checkbox" id="brand-1" name="brand-1" value=""> Бренд 1</label></li>
