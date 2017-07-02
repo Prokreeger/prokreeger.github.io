@@ -465,6 +465,19 @@ body {
 .filter-checkbox {
     margin-right: 7px;
 }
+.filter-btn {
+    background-image: -moz-linear-gradient( -90deg, rgb(32, 105, 136) 0%, rgb(17, 65, 101) 59%, rgb(15, 58, 94) 85%, rgb(12, 50, 86) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(32, 105, 136) 0%, rgb(17, 65, 101) 59%, rgb(15, 58, 94) 85%, rgb(12, 50, 86) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(32, 105, 136) 0%, rgb(17, 65, 101) 59%, rgb(15, 58, 94) 85%, rgb(12, 50, 86) 100%);
+    border: 1px solid rgb(167, 171, 174);
+    border-radius: 15px;
+    color: #e5e9ea;
+    cursor: pointer;
+    font-size: 11px;
+    margin-left: 23px;
+    padding: 7px 14px;
+    text-transform: uppercase;
+}
 .brand-wall {
     clear: both;
     display: block;
