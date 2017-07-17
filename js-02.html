@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style media="screen">
+            .subtitle {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Домашнее задание по JS №2</h1>
+            <h2 class="bg-info subtitle">Задачи на цикл if</h2>
+            <h3><span class="label label-success">Задание 1</span></h3>
+            <p>Пользователь вводит год рождения в input. Пользователь может ввести год рождения в двух форматах: 1988 или 02 (имеется ввиду 2002). Программа должна вывести количество лет которое исполнилось пользователю.</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="example__1">Ведите год рождения</label>
+                    <input type="text" class="form-control" id="example__1" placeholder="год рождения">
+                </div>
+                <button type="submit" class="btn btn-primary" id="btn-1">Поехали</button>
+            </form>
+
+            <h3><span class="label label-success">Задание 2</span></h3>
+            <p>Пользователь вводит 2 числа. Найти и вывести максимальное из данных двух чисел. Учтите вариант равенства чисел.</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="example__2-1">Ведите 1-е число</label>
+                    <input type="text" class="form-control" id="example__2-1" placeholder="1-е число">
+                    <label class="sr-only" for="example__2-2">Ведите 2-е число</label>
+                    <input type="text" class="form-control" id="example__2-2" placeholder="2-е число">
+                </div>
+                <button type="submit" class="btn btn-primary" id="btn-2">Поехали</button>
+            </form>
+
+            <h3><span class="label label-success">Задание 3</span></h3>
+            <p>В первом подъезде номера квартир от 1 до 20, во втором от 21 до 64, в третьем от 65 до 80. Пользователь вводит номер квартиры, необходимо указать в каком она подъезде.</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="example__3-1">Ведите номер квартиры</label>
+                    <input type="text" class="form-control" id="example__3-1" placeholder="№ квартиры">
+                </div>
+                <button type="submit" class="btn btn-primary" id="btn-3">Поехали</button>
+            </form>
+
+            <h3><span class="label label-success">Задание 4</span></h3>
+            <p>Два поля ввода: Логин и пароль. Есть 3 пользователя:</p>
+            <p>ivan -&gt; 333</p>
+            <p>ssss -&gt; 666</p>
+            <p>gibs -&gt; 0000</p>
+            <p>Если введен правильный логин и пароль вывести “Добро пожаловать”, в противном случае - вывести “ошибка”.</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="example__4-1">Ведите логин</label>
+                    <input type="text" class="form-control" id="example__4-1" placeholder="Логин">
+                    <label class="sr-only" for="example__4-2">Ведите пароль</label>
+                    <input type="password" class="form-control" id="example__4-2" placeholder="Пароль">
+                </div>
+                <button type="submit" class="btn btn-primary" id="btn-4">Поехали</button>
+            </form>
+
+            <h3><span class="label label-success">Задание 5</span></h3>
+            <p>Пользователь вводит 3 числа. Найти и вывести максимальное из данных трех чисел</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="example__5-1">Ведите 1-е число</label>
+                    <input type="text" class="form-control" id="example__5-1" placeholder="1-е число">
+                    <label class="sr-only" for="example__5-2">Ведите 2-е число</label>
+                    <input type="text" class="form-control" id="example__5-2" placeholder="2-е число">
+                    <label class="sr-only" for="example__5-3">Ведите 2-е число</label>
+                    <input type="text" class="form-control" id="example__5-3" placeholder="3-е число">
+                </div>
+                <button type="submit" class="btn btn-primary" id="btn-5">Поехали</button>
+            </form>
+
+            <h2 class="bg-info subtitle">Задачи на цикл for</h2>
+            <h3><span class="label label-success">Задание 1</span></h3>
+            <p>Вывести четные числа от 0 до 101.</p>
+            <div class="for-1"></div>
+
+            <h3><span class="label label-success">Задание 2</span></h3>
+            <p>Вывести числа в следущей последовательности: 200 199 198 ... 0.</p>
+            <div class="for-2"></div>
+
+            <h3><span class="label label-success">Задание 3</span></h3>
+            <p>Найти сумму чисел от 0 до 100 (включительно). (0+1+2+3+4+5).</p>
+            <div class="for-3"></div>
+
+            <h3><span class="label label-success">Задание 4</span></h3>
+            <p>Задайте два input. В первый вводится число, во второе его степень. С помощью цикла возведите число в степень. Напечатайте результат.</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="for__4-1">Ведите число</label>
+                    <input type="text" class="form-control" id="for__4-1" placeholder="Число">
+                    <label class="sr-only" for="for__4-2">Ведите степень</label>
+                    <input type="text" class="form-control" id="for__4-2" placeholder="Степень">
+                </div>
+                <button type="button" class="btn btn-primary" id="btn-9">Поехали</button>
+            </form>
+            <div class="for-4"></div>
+
+            <h3><span class="label label-success">Задание 5</span></h3>
+            <p>С помощью цикла напечатайте таблицу умножения на 7 от 1 до 9.</p>
+            <div class="for-5"></div>
+
+            <h3><span class="label label-success">Задание 6</span></h3>
+            <p>С помощью цикла вывести произведение чисел от 1 до 50.</p>
+            <div class="for-6"></div>
+
+            <h3><span class="label label-success">Задание 7</span></h3>
+            <p>Выведите с помощью цикла коды спецсимволов от 1000 до 2000. Напомню, что
+спецсимвол получается комбинацией &amp;#число; Например &amp;#1222;.</p>
+            <div class="for-7"></div>
+        </div>
+        <script type="text/javascript" src="js/js-02.js"></script>
+    </body>
+</html>
