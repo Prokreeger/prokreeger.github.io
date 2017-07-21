@@ -49,7 +49,7 @@ function shiftMas() {
 }
 
 function pushMas() {
-    mas.push("35456ggggg");
+    mas.push(inputPushValue.value);
     showMas();
 }
 
