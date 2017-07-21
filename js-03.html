@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style media="screen">
+        .subtitle {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Домашнее задание по JS №3</h1>
+        <div class="col-md-6">
+            <h2 class="bg-info subtitle">Массивы</h2>
+            <h3><span class="label label-success">Задание 1</span></h3>
+            <p>Напишите функцию для вывода элементов массива в элемент &lt;p id=”new”&gt;&lt;/p&gt;.</p>
+
+            <h3><span class="label label-success">Задание 2</span></h3>
+            <p>Добавьте в предыдущую программу два элемента input, в которые можно ввести индекс массива и значение. По нажатию “ОК” - массив выводится.</p>
+
+            <h3><span class="label label-success">Задание 3</span></h3>
+            <p>Добавьте кнопку pop реализующую метод pop() для введенного выше массива.</p>
+
+            <h3><span class="label label-success">Задание 4</span></h3>
+            <p>Добавьте кнопку shift реализующую метод shift() для введенного выше массива.</p>
+
+            <h3><span class="label label-success">Задание 5</span></h3>
+            <p>Добавьте кнопку push реализующую метод push() для введенного выше массива. Данные для записи необходимо считывать из input.</p>
+        </div>
+        <div class="col-md-6">
+            <h2 class="bg-info subtitle">Результат</h2>
+            <p id="new"></p>
+            <hr>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="input-index">Ведите индекс массива</label>
+                    <input type="text" class="form-control" id="input-index" placeholder="Индекс массива">
+                    <label class="sr-only" for="input-value">Ведите значение массива</label>
+                    <input type="text" class="form-control" id="input-value" placeholder="Значение массива">
+                </div>
+                <button type="button" class="btn btn-primary" id="button-show-mas">ОК</button>
+            </form>
+            <hr>
+            <button type="button" class="btn btn-warning" id="button-pop">POP</button>
+            <button type="button" class="btn btn-danger" id="button-shift">SHIFT</button>
+            <hr>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="input-push-value">Ведите значение массива</label>
+                    <input type="text" class="form-control" id="input-push-value" placeholder="Значение массива">
+                </div>
+                <button type="button" class="btn btn-primary" id="button-push">PUSH</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/js-03.js"></script>
+</body>
+</html>

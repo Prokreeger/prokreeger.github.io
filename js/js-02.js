@@ -33,8 +33,8 @@ let b2 = document.getElementById('example__2-2');
 let btn2 = document.getElementById('btn-2');
 btn2.addEventListener('click', maxNumber);
 function maxNumber() {
-    let c2 = parseInt(a2.value, 10);
-    let d2 = parseInt(b2.value, 10);
+    let c2 = parseFloat(a2.value);
+    let d2 = parseFloat(b2.value);
     if (c2 > d2) {
         alert("Число " + c2 + " больше числа " + d2);
     } else if (c2 < d2) {
@@ -87,9 +87,9 @@ let c5 = document.getElementById('example__5-3');
 let btn5 = document.getElementById('btn-5');
 btn5.addEventListener('click', max3Number);
 function max3Number() {
-    let d5 = parseInt(a5.value, 10);
-    let e5 = parseInt(b5.value, 10);
-    let f5 = parseInt(c5.value, 10);
+    let d5 = parseFloat(a5.value);
+    let e5 = parseFloat(b5.value);
+    let f5 = parseFloat(c5.value);
     let g5 = Math.max(d5,e5,f5);
     if (isNaN(d5) || isNaN(e5) || isNaN(f5)) {
         alert("Вы не ввели числа!!!");
