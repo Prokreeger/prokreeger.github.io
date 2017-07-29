@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашнее задание по JS №4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style media="screen">
+        .subtitle {
+            padding: 10px;
+        }
+        .margin-r-15 {
+            margin-right: 15px;
+        }
+        .margin-b-20 {
+            margin-bottom: 20px;
+        }
+        .counter-icon {
+            font-size: 22px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Домашнее задание по JS №4</h1>
+        <div class="col-md-6">
+            <h2 class="bg-info subtitle">Массивы</h2>
+            <h3><span class="label label-success">Задание 1</span></h3>
+            <p>Задача 1. Напишите функцию, которая выделяет все параграфы на странице красным цветом фона.</p>
+            <div class="text-right">
+                <button id="rez-1" class="btn-link" type="button" name="button">Показать результат</button>
+            </div>
+            <hr>
+
+            <h3><span class="label label-success">Задание 2</span></h3>
+            <p>Напишите функцию, которая добавляет тень всем изображениям на странице.</p>
+            <div class="text-right">
+                <button id="rez-2" class="btn-link" type="button" name="button">Показать результат</button>
+            </div>
+            <hr>
+
+            <h3><span class="label label-success">Задание 3</span></h3>
+            <p>Напишите функцию, которая нумерует все абзацы страницы и добавляет номер перед текстом абзацев.</p>
+            <div class="text-right">
+                <button id="rez-3" class="btn-link" type="button" name="button">Показать результат</button>
+            </div>
+            <hr>
+
+            <h3><span class="label label-success">Задание 4</span></h3>
+            <p>Используя глобальную переменную напишите функцию, которая будет подсчитывать количество нажатий на кнопки. Кнопок – две, реализуйте их в HTML.</p>
+            <hr>
+
+            <h3><span class="label label-success">Задание 5</span></h3>
+            <p>Создайте функцию, которая получает два параметра – число и степень числа. Используя Math.Pow внутри функции, возведите число в степень и выведите с помощью alert.</p>
+            <hr>
+
+            <h3><span class="label label-success">Задание 6</span></h3>
+            <p>Создайте функцию, которая принимает один параметр – строку, которая содержит тег. При вызове функции, она подчеркивает все элементы на странице с данным тегом. Т.е. если пользователь вызвал функцию с параметром ‘p’ – то подчеркиваются абзацы.</p>
+            <hr>
+
+            <h3><span class="label label-success">Задание 7</span></h3>
+            <p>Функция принимает параметр - возраст пользователя. Если число больше 16 – то выводим «добро пожаловать», если меньше – “вы еще молоды”.</p>
+            <hr>
+
+            <h3><span class="label label-success">Задание 8</span></h3>
+            <p>Модифицируйте предыдущий пример – учтите вариант, если пользователь не передал параметр в функцию. В таком случае выведите сообщение – “Введите возраст”. Реализуйте два вида проверки наличия аргумента – проверка на undefined и оператор ||.</p>
+            <hr>
+
+            <h3><span class="label label-success">Задание 9</span></h3>
+            <p>Создайте функцию, которая считает длину массива и возвращает ее в виде числа. Массив в функцию передается как аргумент. Если аргумент не задан – выводится сообщение об ошибке.</p>
+            <hr>
+
+            <h3><span class="label label-success">Задание 10</span></h3>
+            <p>Пользователь вводит числа. Если число больше 10, то функция возвращает квадрат числа, если меньше 7 – пишет, что число меньше 7. Если 8, 9 – то возвращает соответственно 7 или 8. Реализуйте решение с несколькими return.</p>
+            <hr>
+
+            <h3><span class="label label-success">Задание 11</span></h3>
+            <p>Напишите игру «Угадай число». При загрузке страницы генерируется случайное число от 0 до 10. Пользователю дается три попытки угадать число (число вводиться в input). При каждой проверке выдается подсказка: больше или меньше. При угадывании, завершении числа попыток выдается оповещение. Количество попыток выводиться на экран.</p>
+        </div>
+        <div class="col-md-6 result-column">
+            <h2 class="bg-info subtitle">Результат</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <hr>
+            <img class="margin-r-15" alt="120x120" style="width: 120px; height: 120px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQ3OTc2NGRkZCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDc5NzY0ZGRkIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQzLjUiIHk9Ijc0LjgiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=">
+            <img class="margin-r-15" alt="120x120" style="width: 120px; height: 120px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQ3OTc2NGRkZCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDc5NzY0ZGRkIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQzLjUiIHk9Ijc0LjgiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=">
+            <img alt="120x120" style="width: 120px; height: 120px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQ3OTc2NGRkZCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDc5NzY0ZGRkIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQzLjUiIHk9Ijc0LjgiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=">
+            <hr>
+            <button class="btn btn-lg btn-success" onclick="btnCounter(likeBtn);" type="button" name="button"><i class="material-icons counter-icon">thumb_up</i><span class="like-counter">0</span></button>
+            <button class="btn btn-lg btn-warning" onclick="btnCounter(favBtn);" type="button" name="button"><i class="material-icons counter-icon">favorite</i><span class="fav-counter">0</span></button>
+            <hr>
+            <input id="game" class="form-control input-lg margin-b-20" type="text" name="game" value="" placeholder="Введите число">
+            <p class="alert alert-info"></p>
+            <button id="game-btn" class="btn btn-lg btn-primary" type="button" name="button">OK</button>
+        </div>
+    </div>
+    <script src="js/js-04.js"></script>
+</body>
+</html>
