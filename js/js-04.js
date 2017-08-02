@@ -3,6 +3,8 @@ console.log('connect - ok');
 
 /* ==================  View ================ */
 
+let redParagraph = document.querySelectorAll('.result-column > p');
+let img = document.querySelectorAll('.result-column > img');
 let btnRez1 = document.getElementById('rez-1');
 let btnRez2 = document.getElementById('rez-2');
 let btnRez3 = document.getElementById('rez-3');
@@ -10,6 +12,7 @@ let count = 0;
 let likeBtn = document.querySelector('.like-counter');
 let favBtn =  document.querySelector('.fav-counter');
 let attempsNumber = 3;
+let numParagraph = document.querySelectorAll('.result-column > p');
 let randNum = Math.floor(Math.random()*10)+1;
 let gameInput = document.getElementById('game');
 let attempsView = document.querySelector('.alert');
@@ -20,7 +23,6 @@ attempsView.textContent = "Количество попыток: " + attempsNumbe
 
 // Задание 1
 function redText() {
-    let redParagraph = document.querySelectorAll('.result-column > p');
     for (var i = 0; i < redParagraph.length; i++) {
         redParagraph[i].style.backgroundColor = "#f00";
     }
@@ -28,7 +30,6 @@ function redText() {
 
 // Задание 2
 function shadowImg() {
-    let img = document.querySelectorAll('.result-column > img');
     for (var i = 0; i < img.length; i++) {
         img[i].style.boxShadow = "2px 2px 5px #444";
     }
@@ -36,7 +37,6 @@ function shadowImg() {
 
 // Задание 3
 function numBeforeText() {
-    let numParagraph = document.querySelectorAll('.result-column > p');
     for (var i = 0; i < numParagraph.length; i++) {
         numParagraph[i].textContent = (i+1) + ". " + numParagraph[i].textContent;
     }
@@ -46,7 +46,7 @@ function numBeforeText() {
 function btnCounter(btn) {
     count = parseInt(btn.textContent, 10);
     count++;
-    btn.textContent = count;
+    btn.innerHTML = count;
 }
 
 // Задание 5
