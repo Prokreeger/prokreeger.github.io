@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашнее задание по JS №5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style media="screen">
+        body {
+            padding-bottom: 50px;
+        }
+        .subtitle {
+            padding: 10px;
+        }
+        .margin-r-15 {
+            margin-right: 15px;
+        }
+        .margin-b-20 {
+            margin-bottom: 20px;
+        }
+        .margin-t-20 {
+            margin-top: 20px;
+        }
+        .counter-icon {
+            font-size: 22px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Домашнее задание по JS №5</h1>
+        <div class="col-md-6">
+            <h2 class="bg-info subtitle">Работа со строками</h2>
+            <h3 class="margin-b-20"><span class="label label-success">Задание 1</span></h3>
+            <p>Вычитайте строку из input. Высчитайте ее длину. Выведите результат.</p>
+            <hr>
+
+            <h3 class="margin-b-20"><span class="label label-success">Задание 2</span></h3>
+            <p>Создайте массив, который содержит имена изображений в определенной
+папке. Запустите цикл по массиву и выведите все изображения на страницу.
+Подсказка, для вывода изображения используйте тег &gt;img src=”xxxx”&lt; где xxx – путь к
+файлу.</p>
+            <hr>
+
+            <h3 class="margin-b-20"><span class="label label-success">Задание 3</span></h3>
+            <p>Пользователь вводит URL адрес в input в формате http или https. Выведите
+только имя домена без префиксов http://, https://.</p>
+            <hr>
+
+            <h3 class="margin-b-20"><span class="label label-success">Задание 4</span></h3>
+            <p>Пользователь может ввести адрес сайта в формате http://site.ua,
+https://site.ua, http://www.site.ua, https://www.site.ua или site.ua. Ваша задача используя
+поиск в подстроке вывести site в виде: site.ua.</p>
+            <hr>
+
+            <h3 class="margin-b-20"><span class="label label-success">Задание 5</span></h3>
+            <p>Пользователь заполняет форму состоящую из фамилии, имени пароля и
+email. Используя приведенные методы выполните обработку формы состоящую из
+удаления пробелов до и после введённых слов, пароль не должен быть меньше 5
+символов, email должен содержать один символ @ и не содержать пробелов. Если
+форма заполнена корректно, возвращать true.</p>
+            <hr>
+
+            <h3 class="margin-b-20"><span class="label label-success">Задание 6</span></h3>
+            <p>Пользователь вводит символ, выведите его код.</p>
+        </div>
+        <div class="col-md-6 result-column">
+            <h2 class="bg-info subtitle">Результат</h2>
+            <h3 class="margin-b-20"><span class="label label-success">Задание 1</span></h3>
+            <div class="form-inline">
+                <input type="text" class="form-control" id="str-length-inpt" placeholder="Введите строку">
+                <button type="button" class="btn btn-primary" id="get-length-btn" name="button">OK</button>
+            </div>
+            <div class="task-1-result"></div>
+            <hr>
+            <h3 class="margin-b-20"><span class="label label-success">Задание 2</span></h3>
+            <button type="button" class="btn btn-primary" id="create-images-btn" name="button">Результат</button>
+            <div class="task-2-result"></div>
+            <hr>
+            <h3 class="margin-b-20"><span class="label label-success">Задание 3</span></h3>
+            <div class="form-inline">
+                <input type="text" class="form-control" id="site-inpt" placeholder="Введите сайт">
+                <button type="button" class="btn btn-primary" id="get-site-btn" name="button">OK</button>
+            </div>
+            <div class="task-3-result"></div>
+            <hr>
+            <h3 class="margin-b-20"><span class="label label-success">Задание 4</span></h3>
+            <div class="form-inline">
+                <input type="text" class="form-control" id="4site-inpt" placeholder="Введите сайт">
+                <button type="button" class="btn btn-primary" id="get-4site-btn" name="button">OK</button>
+            </div>
+            <div class="task-4-result"></div>
+            <hr>
+            <h3 class="margin-b-20"><span class="label label-success">Задание 5</span></h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="first-name" placeholder="Имя">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="last-name" placeholder="Фамилия">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder="Пароль">
+                </div>
+                <button type="button" class="btn btn-primary" id="send-form">Отправить</button>
+            </form>
+            <div class="task-5-result"></div>
+            <hr>
+            <h3 class="margin-b-20"><span class="label label-success">Задание 6</span></h3>
+            <div class="form-inline">
+                <input type="text" class="form-control" id="symbol-inpt" placeholder="Введите символ" maxlength="1">
+                <button type="button" class="btn btn-primary" id="get-symbol-btn" name="button">OK</button>
+            </div>
+            <div class="task-6-result"></div>
+        </div>
+    </div>
+    <script src="js/js-05.js"></script>
+</body>
+</html>
