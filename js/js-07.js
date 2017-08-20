@@ -30,7 +30,7 @@ $(inptBox).on("click", ".remove-input-btn", function(e) {
 $('.fields-value-btn').on('click', function() {
     $('.fields-value').val('');
     var isValid = true;
-    $('input[type="text"]').each(function() {
+    $('.input-fields input[type="text"]').each(function() {
         if ($(this).val().length < 1) {
             $(this).parent('.field-wrapper').addClass('has-error');
             $(this).parent('.field-wrapper:not(:has(.alert))').append('<div class="alert alert-danger" role="alert">Заполните поле!</div>');
@@ -77,24 +77,20 @@ $('.modal .btn').on('click', function() {
 // Задание 5
 
 $(".add-list-item-btn").on('click', function() {
-       $('.list').append('<li>' + $('.list-item-input').val() + '</li>');
+    $('.list').append('<li>' + $('.list-item-input').val() + '</li>');
 });
 
 $('.list').on('click', 'li', function(){
-    if (!$(this).hasClass('bg-red')) {
-        $(this).addClass('bg-red');
-    } else {
-        $(this).removeClass('bg-red');
-    }
+    $(this).toggleClass('bg-red');
 });
 
 // Задание 6
 
 $('.img-box').mouseenter(function() {
-    $('.img-caption').show('slide', { direction: 'right' });
+    $('.img-caption').show('slide', { direction: 'right', queue: false });
 });
 $('.img-box').mouseleave(function() {
-    $('.img-caption').hide('slide', { direction: 'right' });
+    $('.img-caption').hide('slide', { direction: 'right', queue: false });
 });
 
 // Задание 7-8
@@ -202,14 +198,3 @@ $('.count-meta-btn').on('click', function(){
 
 /* ==================  Controller ================ */
 
-//fieldsValueBtn.addEventListener('click', getFieldsValue);
-
-// function startGame () {
-//     let argGame = parseInt(gameInput.value, 10);
-//     console.log(argGame);
-//     if (isNaN(gameInput.value) || gameInput.value == "") {
-//         alert("Вы не ввели число!!!");
-//     } else {
-//         compareNumbers(argGame);
-//     }
-// }
