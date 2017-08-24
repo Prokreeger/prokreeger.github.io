@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашнее задание по JS №8</title>
+    <meta name="description" content="dfsf sfsd sffs sfsf">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/js-08.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Домашнее задание по JS №8</h1>
+        <div class="col-md-6">
+            <h2 class="bg-info subtitle">jQuery</h2>
+            <h3><span class="label label-success">Задание</span></h3>
+            <p>Разработайте скрипт, который получает из input введенный url адрес. Адрес обрабатывается таким образом, что введенные имена приводятся к виду:</p>
+            <p>Ввели</p>
+            <ul>
+                <li>http://primer.ua</li>
+                <li>http://www.primer.ua</li>
+                <li>https://primer.ua</li>
+            </ul>
+            <p>Получили: primer (удаляются протоколы и локальные зоны)</p>
+            <p>Затем введенная строка обрабатывается по правилам:</p>
+            <ul>
+                <li>все символы о или О заменяются на 0 (нуль)</li>
+                <li>l заменяются на единицу (символ эль на единицу)</li>
+                <li>все символы «i» заменяются на 3</li>
+                <li>все буквы s заменяются на 5</li>
+                <li>к результирующей строке добавляется случайный набор из 4-х символов.</li>
+            </ul>
+            <p>Результат – выводится на экран.</p>
+            <p>Для реализации использовать jQuery.</p>
+            <p>Примеры:</p>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Пользователь ввел</th>
+                        <th>Получил</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>http://mario.ua</td>
+                    <td>mar30tera</td>
+                </tr>
+                <tr>
+                    <td>http://football.de</td>
+                    <td>f00tba11st4w</td>
+                </tr>
+                <tr>
+                    <td>http://kreed.ua</td>
+                    <td>kreed76se</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-6 result-column">
+            <h2 class="bg-info subtitle">Результат</h2>
+            <div class="form-inline">
+                <input class="form-control url-input" type="text" name="" value="" placeholder="Введите url">
+                <button class="btn btn-primary url-btn" type="button" name="button">OK</button>
+            </div>
+            <hr>
+            <div class="result-box">
+                <div class="original-url"></div>
+                <div class="new-url"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/js-08.js"></script>
+</body>
+</html>
