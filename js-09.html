@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашнее задание по JS №9</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/js-09.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Домашнее задание по JS №9</h1>
+        <div class="col-md-6">
+            <h2 class="bg-info subtitle">jQuery и Ajax</h2>
+            <h3><span class="label label-success">Задание 1</span></h3>
+            <p>Передайте на сервер два числа методом POST. Имена чисел – num1 и num2. Цель — файл a1.php. Если все выполнено верно, то будет возвращена строка с суммой чисел, если нет – ошибка. Способ передачи – AJAX.</p>
+            <hr>
+
+            <h3><span class="label label-success">Задание 2</span></h3>
+            <p>Передайте на сервер свой год рождения в формате XXXX. Передачу осуществляйте методом POST, имя переменной year, имя целевого файла – a2.php. Если все выполнено верно, то сервер вернет строку в которой будет количество прожитых лет, если нет – ошибку. Способ передачи – AJAX</p>
+            <hr>
+
+            <h3><span class="label label-success">Задание 3</span></h3>
+            <p>Создайте форму с radiobutton для выбора пола (мужчина или женщина). Добавьте поле для ввода роста (в сантиметрах). По нажатию кнопки “Идеальный вес”, пошлите запрос на файл a3.php. На сервер передается параметр пол – имя параметра sex, значения man или woman и рост ( имя height). Передача осуществляется методом AJAX, с помощью POST. Если все выполнено правильно, то будет возвращена строка с расчетом идеального веса под заданный пол. В противном случае – ошибка.</p>
+            <hr>
+
+            <h3><span class="label label-success">Задание 4</span></h3>
+            <p>Измените предыдущее значение, чтобы рост задавался с помощью ползунка range.</p>
+            <hr>
+
+            <h3><span class="label label-success">Задание 5</span></h3>
+            <p>Создайте форму с полями:</p>
+            <ul>
+                <li>fio – поле ввода для имени и фамилии;</li>
+                <li>email – поле ввода для email адреса</li>
+                <li>phone – поле ввода для телефона</li>
+            </ul>
+            <p>По нажатию кнопки передайте данные из полей ввода на сервер (mail.php) посредством POST (AJAX). Имена переменных – такие, как указано в списке. Если все сделано верно, то по адресу указанному в файле mail.php в переменной $to будет отправлено письмо, если нет – выведена ошибка.</p>
+            <p>Возвращаемый формат – строка.</p>
+            <hr>
+
+            <h2 class="bg-info subtitle">Структурированные данные (JSON)</h2>
+            <h3><span class="label label-success">Задание 6</span></h3>
+            <p>Пошлите на сервер (goods.php) методом GET артикул товара (art). Сервер реагирует только на 2 артикула (1 или 2). Если все выполнено верно то сервер пришлет вам JSON строку с описанием товара. После раскодировки (JSON.parse) вы сможете вывести поля:</p>
+            <ul>
+                <li>name – имя товара</li>
+                <li>weight – вес товара</li>
+                <li>cost – стоимость товара</li>
+                <li>img – ссылка на картинку.</li>
+            </ul>
+
+        </div>
+        <div class="col-md-6 result-column">
+            <h2 class="bg-info subtitle">Результат</h2>
+            <h3><span class="label label-success">Задание 1</span></h3>
+            <div class="form-inline">
+                <input class="form-control" type="text" placeholder="Число 1">
+                <input class="form-control" type="text" placeholder="Число 2">
+                <input class="btn btn-info send-numbers-btn" type="button" value="Отправить">
+            </div>
+            <div id="out"></div>
+            <hr>
+            <h3><span class="label label-success">Задание 4</span></h3>
+            <input class="btn btn-primary modal-btn" type="button" name="button" value="Всплывающее окно">
+            <div class="text"></div>
+            <div class="hidden modal">
+                <input class="btn btn-primary btn-lg" type="button" name="button" value="Опция 1">
+                <input class="btn btn-primary btn-lg" type="button" name="button" value="Опция 2">
+            </div>
+            <hr>
+            <h3><span class="label label-success">Задание 5</span></h3>
+            <ul class="list">
+                <li>Значние 1</li>
+                <li>Значние 2</li>
+                <li>Значние 3</li>
+                <li>Значние 4</li>
+            </ul>
+            <div class="form-inline">
+                <input class="form-control list-item-input" type="text" value="" placeholder="Введите элемент списка">
+                <input class="btn btn-primary add-list-item-btn" type="button" value="Добавить">
+            </div>
+            <hr>
+            <h3><span class="label label-success">Задание 6</span></h3>
+            <div class="img-box">
+                <img src="img/bike.jpg" alt="photo">
+                <div class="img-caption">sdfsfsfsfsdfsf</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/js-09.js"></script>
+</body>
+</html>

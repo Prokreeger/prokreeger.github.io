@@ -9,18 +9,6 @@ let newUrl = $(".new-url");
 
 /* ==================  Model ================ */
 
-$(urlBtn).on("click", function(e) {
-    e.preventDefault();
-    var url = $(inpt).val();
-    originUrl.html("<b>Введено:</b> " + url);
-    url = url.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('.')[0];
-    url = url.replace(/o|O/g,"0");
-    url = url.replace(/l/g,"1");
-    url = url.replace(/i/g,"3");
-    url = url.replace(/s/g,"5");
-    newUrl.html("<b>Получено:</b> " + url + randomStr());
-});
-
 function randomStr() {
 	num = 4;
     str = '';
@@ -33,3 +21,14 @@ function randomStr() {
 
 /* ==================  Controller ================ */
 
+$(urlBtn).on("click", function(e) {
+    e.preventDefault();
+    var url = $(inpt).val();
+    originUrl.html("<b>Введено:</b> " + url);
+    url = url.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('.')[0];
+    url = url.replace(/o|O/g,"0");
+    url = url.replace(/l/g,"1");
+    url = url.replace(/i/g,"3");
+    url = url.replace(/s/g,"5");
+    newUrl.html("<b>Получено:</b> " + url + randomStr());
+});
