@@ -11,7 +11,7 @@ console.log('connect - ok');
 function sendAJAX(){
 	//AJAX
 	$.post(
-		"../php/a1.php",
+		"php/a1.php",
 		{
 			"num1" : $('#num1').val(),
             "num2" : $('#num2').val()
