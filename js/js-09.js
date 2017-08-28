@@ -10,28 +10,31 @@ console.log('connect - ok');
 
 function sendAJAX(){
 	//AJAX
-	$.post(
-		"php/a1.php",
-		{
-			"num1" : $('#num1').val(),
-            "num2" : $('#num2').val()
-		},
-		function (data) {
-			console.log(data);
-			$('#out').html(data);
-		}
-	);
-	//--------------------
-	// $.ajax({
-	// 	url: "ajax.php",
-	// 	method : "GET",
-	// 	data : {"num1" : $('#num1').val()},
-	// 	success: function(data){
-	// 		// $('#out').html(data);
-	// 		data = JSON.parse(data);
-	// 		console.log(data.bar);
+	// $.post(
+	// 	"php/a1.php",
+	// 	{
+	// 		"num1" : $('#num1').val(),
+    //         "num2" : $('#num2').val()
+	// 	},
+	// 	function (data) {
+	// 		console.log(data);
+	// 		$('#out').html(data);
 	// 	}
-	// });
+	// );
+	//--------------------
+	$.ajax({
+		url: "php/a1.php",
+		method : "POST",
+		data : {
+            "num1" : $('#num1').val(),
+            "num2" : $('#num2').val()
+        },
+		success: function(data){
+			$('#out').html(data);
+			// data = JSON.parse(data);
+			// console.log(data.bar);
+		}
+	});
 	// $('#out').load('test.txt');
 }
 
