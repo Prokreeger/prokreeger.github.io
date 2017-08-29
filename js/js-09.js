@@ -30,7 +30,7 @@ function sendAJAX(){
             "num2" : $('#num2').val()
         },
 		success: function(data){
-			$('#out').html(data);
+			$('#out').text(data);
 			// data = JSON.parse(data);
 			// console.log(data.bar);
 		}
