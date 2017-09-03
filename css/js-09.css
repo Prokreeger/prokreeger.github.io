@@ -5,56 +5,29 @@
     display: block;
     padding: .5em .6em .5em;
 }
-.margin-r-15 {
-    margin-right: 15px;
-}
 .margin-b-10 {
     margin-bottom: 10px;
 }
 .margin-b-20 {
     margin-bottom: 20px;
 }
-.add-input-btn,
-.remove-input-btn {
-    height: 34px;
-    width: 34px;
-}
-.alert {
-    display: inline-block;
-    margin-bottom: 0;
-    margin-left: 10px;
-    padding: 6px 10px;
-    vertical-align: middle;
-}
-.text {
-    display: inline-block;
-    margin-left: 10px;
-}
-.modal {
-    background-color: pink;
-    height: 300px;
-    left: 50%;
-    margin-left: -30%;
-    padding: 25px;
-    position: absolute;
-    top: 30px;
-    width: 60%;
-}
-.bg-red {
-    background-color: red;
-}
-.img-box {
-    border: 2px solid #000;
-    position: relative;
+.product {
+    border: 2px solid #ccc;
+    margin-bottom: 25px;
+    padding: 10px;
     text-align: center;
+    width: 200px;
 }
-.img-caption {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    display: none;
-    height: 307px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 536px;
+.product-img {
+    margin-bottom: 15px;
+}
+.product-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.product-weight-title,
+.product-cost-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
