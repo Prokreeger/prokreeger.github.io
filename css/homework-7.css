@@ -34,8 +34,8 @@
     max-width: 960px;
 }
 .header {
-    background: url('../img/h7/header_bg.jpg') center center no-repeat;
-    height: 790px;
+    background: url('../img/h7/header_bg.jpg') center top no-repeat;
+    padding-bottom: 51px;
     padding-top: 57px;
 }
 .nav-bar {
@@ -47,10 +47,12 @@
 }
 .menu {
     display: inline-block;
-    float: right;
     font-size: 0;
-    margin-top: 23px;
     vertical-align: middle;
+}
+.menu--header {
+    float: right;
+    margin-top: 23px;
 }
 .menu__item {
     display: inline-block;
@@ -59,7 +61,7 @@
     padding: 0 5px 2px 7px;
     vertical-align: middle;
 }
-.menu__item:last-child {
+.menu .menu__item:last-child {
     margin-right: 0;
 }
 .menu__item--active {
@@ -255,8 +257,9 @@
 }
 .testimonials {
     display: inline-block;
-    margin-right: 60px;
+    margin-right: 10%;
     vertical-align: top;
+    width: 45%;
 }
 .testimonials__item {
     background-color: #fff;
@@ -265,7 +268,6 @@
     margin-left: 23px;
     padding: 32px 38px 38px;
     position: relative;
-    width: 351px;
 }
 .testimonials__item::after {
     bottom: -12px;
@@ -309,8 +311,6 @@
     font-size: 0;
     text-align: center;
     margin-left: 23px;
-    margin-top: 20px;
-    width: 427px;
 }
 .testimonials__bullet {
     background-color: #fff;
@@ -351,6 +351,7 @@
     display: inline-block;
     padding-top: 32px;
     vertical-align: top;
+    width: 45%;
 }
 .blog-updates__item {
     font-size: 0;
@@ -368,18 +369,17 @@
     text-transform: uppercase;
 }
 .blog-updates__image {
-    display: inline-block;
+    display: block;
+    float: left;
     margin-right: 16px;
-    vertical-align: middle;
 }
 .blog-updates__text {
-    display: inline-block;
+    display: block;
     overflow: hidden;
-    vertical-align: middle;
 }
 .blog-updates__title {
     color: #454545;
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     font-size: 16px;
     font-weight: bold;
     line-height: 1.5;
@@ -387,7 +387,7 @@
 }
 .blog-updates__description {
     color: #454545;
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     font-size: 16px;
     line-height: 1.5;
     text-shadow: 0 1px 0 #ffffff;
@@ -412,26 +412,13 @@
     padding: 24px 0 30px;
 }
 .brands__list {
-    padding-left: 93px;
+    text-align: center;
 }
 .brands__item {
     display: inline-block;
+    margin-right: 18px;
     vertical-align: middle;
-}
-.brands__item--b1 {
-    margin-right: 65px;
-}
-.brands__item--b2 {
-    margin-right: 64px;
-}
-.brands__item--b3 {
-    margin-right: 75px;
-}
-.brands__item--b4 {
-    margin-right: 68px;
-}
-.brands__item--b5 {
-    margin-right: 66px;
+    width: 103px;
 }
 .comments-and-news {
     background-color: #ececec;
@@ -492,11 +479,9 @@
 }
 .footer {
     background: url('../img/h7/footer_bg.jpg') center center no-repeat;
-    height: 18px;
     padding: 48px 0;
 }
 .menu--footer {
-    float: none;
     margin-top: 0;
 }
 .menu--footer .menu__item {
@@ -511,8 +496,160 @@
     float: right;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 12px;
+    margin-top: 3px;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 .designed-by__author {
     font-weight: bold;
+}
+@media only screen and (max-width: 959px) {
+    .header {
+        padding-bottom: 100px;
+    }
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .nav-bar {
+        margin-bottom: 71px;
+    }
+    .logo {
+        display: block;
+    }
+    .menu--header {
+        float: none;
+        margin-top: 38px;
+    }
+    .slider__item {
+        margin: 0 20px;
+    }
+    .slider__description {
+        padding-bottom: 110px;
+        padding-top: 99px;
+        width: 280px;
+    }
+    .slider__title {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+    .slider__subtitle {
+        font-size: 24px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .slider__text {
+        font-size: 16px;
+        height: 98px;
+        overflow: hidden;
+    }
+    .slider__nav-bullets {
+        margin-top: 37px;
+    }
+    .features__title {
+        font-size: 24px;
+    }
+    .features__text {
+        height: 144px;
+        overflow: hidden;
+    }
+    .testimonials {
+        margin-right: 6%;
+        width: 47%;
+    }
+    .blog-updates {
+        width: 47%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .logo {
+        text-align: center;
+    }
+    .slider__overlay {
+        height: 100%;
+    }
+    .slider__description {
+        padding-bottom: 89px;
+        padding-top: 89px;
+    }
+    .slider__title {
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+    .slider__subtitle {
+        font-size: 18px;
+    }
+    .slider__text {
+        display: none;
+    }
+    .slider__image img {
+        width: 192px;
+    }
+    .features__col {
+        margin-bottom: 29px;
+    }
+    .features__col:last-child {
+        margin-bottom: 0;
+    }
+    .features__text {
+        height: 100%;
+        overflow: hidden;
+    }
+    .testimonials {
+        margin-right: 0;
+        width: 100%;
+    }
+    .blog-updates {
+        margin-left: 15%;
+        width: 75%;
+    }
+    .brands {
+        padding: 24px 0 3px;
+    }
+    .brands__item {
+        margin-bottom: 27px;
+    }
+    .col {
+        margin-right: 0;
+        width: 100%;
+    }
+    .about-short,
+    .comments {
+        margin-bottom: 50px
+    }
+    .footer {
+        background: url('../img/h7/footer_bg_767x168.jpg') center center no-repeat;
+        text-align: center;
+    }
+    .menu--footer {
+        margin-bottom: 40px;
+    }
+    .menu--footer .menu__item {
+        margin-right: 24px;
+    }
+    .designed-by {
+        float: none;
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 320px) {
+    .menu--header {
+        margin: 38px auto 0;
+        text-align: center;
+        width: 280px;
+    }
+    .menu--header .menu__item {
+        display: block;
+        margin-right: 0;
+    }
+    .slider__image {
+        display: none;
+    }
+    .blog-updates {
+        margin-left: 0;
+        width: 100%;
+    }
+    .menu--footer {
+        display: none;
+    }
 }
